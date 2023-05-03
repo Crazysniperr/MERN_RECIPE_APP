@@ -19,6 +19,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.send("Hello from Dalle");
 })
 app.use("/auth", UserRouter);
 app.use("/recipes", recipesRouter);
